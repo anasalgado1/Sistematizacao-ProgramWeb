@@ -1,0 +1,283 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2C3E50;
+    background-color: #ECF0F1;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container > img {
+    width: 150px;
+    height: 150px;
+}
+
+h1, h2 {
+    color: #16A085;
+    font-size: 35px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #B8C1C0;
+    padding: 20px 0;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #16A085;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+/* Seção Principal */
+#principal {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.principal-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    gap: 50px;
+}
+
+.principal-conteudo .texto {
+    flex: 1;
+    text-align: left;
+}
+
+.principal-conteudo h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #16A085;
+}
+
+.principal-conteudo p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: black;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    background-color: #16A085;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #13856E;
+}
+
+.principal-conteudo .imagem img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Seções Gerais */
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#sobre, #contato {
+    background-color: #f0f8ff;
+}
+
+.sobre-conteudo, .contato-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+}
+
+.texto {
+    flex: 1;
+    font-size: 1.1em;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.texto p {
+    margin-bottom: 15px;
+}
+
+.texto strong {
+    color: #16A085;
+}
+
+.imagem img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção Produtos */
+#produto {
+    background-color: #f8f9fa;
+}
+
+.produtos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.produto-card {
+    background: white;
+    padding: 20px;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.produto-card h3 {
+    color: #16A085;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.produto-card p {
+    font-size: 1em;
+    color: #555;
+    text-align: justify;
+}
+
+.produto-card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.produto-card ul{
+    list-style: none;
+}
+
+/* Seção Equipe */
+#equipe {
+    background-color: #f8f9fa;
+}
+
+.equipe-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.membro {
+    text-align: center;
+    max-width: 250px;
+}
+
+.membro img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.membro p {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Formulário de Contato */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #16A085;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #13856E;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
